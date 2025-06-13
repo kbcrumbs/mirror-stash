@@ -38,4 +38,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# netlify (if not used)
+netlify.toml
 next-env.d.ts

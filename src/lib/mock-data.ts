@@ -328,7 +328,10 @@ export const mockStashTabs: StashTab[] = [
           { name: "Map Tier", values: [["11", 0]], displayMode: 0 },
           { name: "Item Quantity", values: [["+75%", 1]], displayMode: 0 },
           { name: "Item Rarity", values: [["+40%", 1]], displayMode: 0 },
-          { name: "Monster Pack Size", values: [["+25%", 1]], displayMode: 0 }
+          { name: "Monster Pack Size", values: [["+25%", 1]], displayMode: 0 },
+          { name: "Atlas Region", values: [["Lex Ejoris", 0]], displayMode: 0 },
+          { name: "Map Boss", values: [["The Shoreline Horror", 0]], displayMode: 0 },
+          { name: "Awakening Bonus", values: [["Complete the Bonus Objective to increase the Awakening Level of your Atlas.", 0]], displayMode: 3 }
         ],
         explicitMods: [
           { text: "Players are Cursed with Vulnerability" },
@@ -379,6 +382,33 @@ export const mockStashTabs: StashTab[] = [
           { text: "increased Minion Attack Speed", numericValue: 5, valueSuffix: "%" }
         ],
         descrText: "Place into an allocated Large Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket."
+      },
+      {
+        id: "uniqueFlask1",
+        name: "Taste of Hate",
+        typeLine: "Sapphire Flask",
+        icon: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRmxhc2tzL1VuaXF1ZUZsYXNrOCIsInciOjEsImgiOjIsInNjYWxlIjoxfV0/0f9e7b3d5c/UniqueFlask8.png",
+        w: 1,
+        h: 2,
+        x: 6, // Positioned below the Viridian Jewel
+        y: 3,
+        identified: true,
+        frameType: 3, // Unique
+        properties: [
+          { name: "Lasts", values: [["5.00", 0]], displayMode: 0 },
+          { name: "Consumes", values: [["30", 0]], displayMode: 0 },
+          { name: "Charges", values: [["60", 0]], displayMode: 0 }
+        ],
+        explicitMods: [
+          { text: "of Physical Damage as Extra Cold Damage during effect", numericValue: [15, 20], valueSuffix: "%" },
+          { text: "additional Physical Damage Reduction during effect", numericValue: [10, 15], valueSuffix: "%" },
+          { text: "chance to Avoid Cold Damage when Hit during effect", numericValue: [20, 30], valueSuffix: "%" }
+        ],
+        requirements: [
+          { name: "Requires Level", values: [["40", 0]], displayMode: 0 }
+        ],
+        descrText: "Right click to drink. Can be used 2 more times.",
+        flavourText: "Bitterness is a formidable ally."
       }
     ],
   },
